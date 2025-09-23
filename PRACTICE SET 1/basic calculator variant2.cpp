@@ -13,6 +13,7 @@ int enterNumber()
 
         if (cin.fail())
         {
+            cout << "Oop, invalid! must be an Integer!" << endl;
             cin.clear();
             cin.ignore();
         }
@@ -34,8 +35,6 @@ int main()
 
     auto num1 = enterNumber();
     auto num2 = enterNumber();
-
-    cout << num1 << endl;
 
     while (true)
     {
