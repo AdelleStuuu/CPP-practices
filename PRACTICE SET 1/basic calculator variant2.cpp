@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -13,9 +14,9 @@ int enterNumber()
 
         if (cin.fail())
         {
-            cout << "Oop, invalid! must be an Integer!" << endl;
             cin.clear();
-            cin.ignore();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Oop, invalid! must be an Integer!" << endl;
         }
         else
         {
