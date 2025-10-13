@@ -3,12 +3,14 @@
 using namespace std;
 int main()
 {
-    float philippinePeso;
+    // initialize the vairable
+    float philippinePeso, dollar, euro, yuan, koruna, krone, sheqel, dinar;
+
+    // provide the inputs
     cout << "Enter Philippine Peso: ";
     cin >> philippinePeso;
 
-    float dollar, euro, yuan, koruna, krone, sheqel, dinar;
-
+    // conversion table for the differing currencies
     dollar = philippinePeso / 43.33089;
     euro = dollar * .734719;
     yuan = dollar * 6.346934;
@@ -17,6 +19,7 @@ int main()
     sheqel = dollar * 3.726334;
     dinar = dollar * .274588;
 
+    // provide a table of the differing conversions
     cout << endl;
     cout << "Dollar\t:\t" << dollar << endl;
     cout << "Euro\t:\t" << euro << endl;
